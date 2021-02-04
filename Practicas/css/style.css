@@ -13,24 +13,24 @@ html{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: tomato;
+    background-color: #213b25;
     width: 100%;
-    height: 50rem;
+    height: 100vh;
 
 }
 .animacion {
     animation-name: movimiento;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    animation-direction: alternate ;
     display:flex;
     flex-wrap: wrap;
     width: 25rem;
     height: 25rem;
-    background-color: teal;
+    background-color: #3a604a;
     margin: 0 auto;
     border-radius: 50%;
-    justify-content: center;
-    align-items: center;
+    
     
     
 
@@ -38,9 +38,9 @@ html{
 
 .animacion div {
     animation-name: circulo;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
-    background-color: #fff;
+    animation-direction: alternate;
     width: 25%;
     height: 25%;
     margin: auto;
@@ -56,9 +56,14 @@ html{
         
     }
 
+    50% {
+        border-radius: 25%;
+        background-color: #2f213b;
+    }
+
     to {
 
-        transform: rotate(180deg);
+        transform: rotate(360deg);
 
     }
 }
@@ -66,16 +71,35 @@ html{
 @keyframes circulo {
 
     from{
-        background-color: thistle;
+        background-color: #77744f;
         transform: rotate(0deg);
+        margin-left: 75%;
+        border-radius: 50%;
     }
 
+    25%{
+        height: 20%;
+        width: 20%;
+        
+    }
     50% {
-        background-color: turquoise;
+        background-color:#a19f7c ;
+        border-radius: 0%;
+        height: 15%;
+        width: 15%;
+    
+    }
+
+    75% {
+        height: 20%;
+        width: 20%;
     }
 
     to {
-        background-color: yellowgreen;
-        transform: rotate(360deg);
+        background-color: #775c4f;
+        transform: rotate(180deg);
+        margin-left: 0%;
+        border-radius: 50%;
+    
     }
 }
