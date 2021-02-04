@@ -1,23 +1,81 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+.container{
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+    width: 100%;
+    height: 50rem;
+
+}
 .animacion {
     animation-name: movimiento;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    display:flex;
+    flex-wrap: wrap;
+    width: 25rem;
+    height: 25rem;
+    background-color: teal;
+    margin: 0 auto;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+
+.animacion div {
+    animation-name: circulo;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    width: 100px;
-    background-color: teal;
-    color: #fff;
-    position: relative;
-    padding: 2px;
+    background-color: #fff;
+    width: 25%;
+    height: 25%;
+    margin: auto;
+    
+
 }
 
 @keyframes movimiento {
 
     from {
-        left: 0px;
+
+        transform: rotate(0deg);
+        
     }
 
     to {
 
-        left: 100px;
+        transform: rotate(180deg);
+
+    }
+}
+
+@keyframes circulo {
+
+    from{
+        background-color: thistle;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        background-color: turquoise;
+    }
+
+    to {
+        background-color: yellowgreen;
+        transform: rotate(360deg);
     }
 }
