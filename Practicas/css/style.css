@@ -20,13 +20,13 @@ html{
 }
 .animacion {
     animation-name: movimiento;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    
     animation-direction: alternate ;
     display:flex;
     flex-wrap: wrap;
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
     background-color: #3a604a;
     margin: 0 auto;
     border-radius: 50%;
@@ -38,15 +38,17 @@ html{
 
 .animacion div {
     animation-name: circulo;
-    animation-duration: 2s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     width: 25%;
     height: 25%;
     margin: auto;
     
+    
 
 }
+
 
 @keyframes movimiento {
 
@@ -58,12 +60,15 @@ html{
 
     50% {
         border-radius: 25%;
-        background-color: #2f213b;
+        background-color: #265f8d;
+     
+    
     }
 
     to {
 
         transform: rotate(360deg);
+        
 
     }
 }
@@ -78,28 +83,38 @@ html{
     }
 
     25%{
-        height: 20%;
-        width: 20%;
+        height: 10%;
+        width: 10%;
         
     }
     50% {
-        background-color:#a19f7c ;
+        background-color: #213b25 ;
         border-radius: 0%;
-        height: 15%;
-        width: 15%;
+        height: 40%;
+        width: 40%;
+        margin-left: 30.25%;
     
     }
 
     75% {
-        height: 20%;
-        width: 20%;
+        height: 10%;
+        width: 10%;
     }
 
     to {
-        background-color: #775c4f;
-        transform: rotate(180deg);
+        background-color: #fff;
+        transform: rotate(360deg);
         margin-left: 0%;
         border-radius: 50%;
+        height: 25%;
+        width: 25%;
     
+    }
+}
+
+@media (min-width: 500px){
+    .animacion {
+        width: 25rem;
+        height: 25rem;
     }
 }
