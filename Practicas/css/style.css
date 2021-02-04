@@ -54,7 +54,6 @@ html{
 .animacion div h1 {
     font-size: 4rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: lavenderblush;
     margin: auto;
     animation-name: letra;
     animation-duration: 6s;
@@ -65,7 +64,7 @@ html{
 .h2resto h2::after{
     content: "elcome";
     animation-name: despues;
-    animation-duration: 6s;
+    animation-duration: 6.5s;
     animation-fill-mode: forwards;
     margin: auto;
     
@@ -85,10 +84,12 @@ html{
 
     50% {
         font-size: 0;
+        
     }
 
     75% {
         font-size: 0;
+        
     }
 
     99% {
@@ -98,6 +99,7 @@ html{
     to {
         font-size: 4rem; 
         color: black;
+        
     }
 
 }
@@ -120,12 +122,14 @@ html{
 
     75% {
         font-size: 1rem;
-        color: lavenderblush;
+        color: black;
     }
 
     to {
-        font-size: 4rem; 
+        font-size: 4rem;
         color: black;
+        margin: auto;
+
     }
 
 }
@@ -141,13 +145,20 @@ html{
     50% {
         border-radius: 0%;
         background-color: #265f8d;
+       
      
     
     }
 
+    90%{
+         margin-bottom: 70%;
+         border-radius: 100%;
+    }
+
     95% {
-        width: 20rem;
-        height: 20rem;
+        width: 15rem;
+        height: 15rem;
+       
 
     }
 
@@ -155,8 +166,9 @@ html{
 
         transform: rotate(360deg);
         border-radius: 20%;
-        width: 70%;
-        height: 20%;
+        width: 60%;
+        height: 15%;
+        margin-bottom: 89%;
         
 
     }
@@ -165,7 +177,7 @@ html{
 @keyframes circulo {
 
     from{
-        background-color: #77744f;
+        background-color: black;
         transform: rotate(0deg);
         margin-left: 75%;
         border-radius: 50%;
@@ -177,7 +189,7 @@ html{
         
     }
     50% {
-        background-color: #213b25 ;
+        background-color: black ;
         border-radius: 0%;
         height: 40%;
         width: 40%;
@@ -188,10 +200,11 @@ html{
     75% {
         height: 10%;
         width: 10%;
+        background-color: #000000;
     }
     
     95% {
-        background-color: #77744f;
+        background-color: #000000;
     }
 
     to {
