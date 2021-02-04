@@ -21,7 +21,7 @@ html{
 .animacion {
     animation-name: movimiento;
     animation-duration: 6s;
-    
+    animation-fill-mode: forwards;
     animation-direction: alternate ;
     display:flex;
     flex-wrap: wrap;
@@ -62,11 +62,15 @@ html{
     
 }
 
-.animacion div h1::after{
+.h2resto h2::after{
     content: "elcome";
     animation-name: despues;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-fill-mode: forwards;
+    margin: auto;
+    
+    
+
 }
 
 @keyframes despues {
@@ -87,7 +91,7 @@ html{
         font-size: 0;
     }
 
-    90% {
+    99% {
         font-size: 0;
     }
 
@@ -135,15 +139,24 @@ html{
     }
 
     50% {
-        border-radius: 25%;
+        border-radius: 0%;
         background-color: #265f8d;
      
     
     }
 
+    95% {
+        width: 20rem;
+        height: 20rem;
+
+    }
+
     to {
 
         transform: rotate(360deg);
+        border-radius: 20%;
+        width: 70%;
+        height: 20%;
         
 
     }
@@ -176,14 +189,18 @@ html{
         height: 10%;
         width: 10%;
     }
+    
+    95% {
+        background-color: #77744f;
+    }
 
     to {
-        background-color: #77744f;
+       
         transform: rotate(360deg);
         margin-left: 0%;
-        border-radius: 50%;
-        height: 25%;
-        width: 25%;
+        border-radius: 100%;
+        height: 30%;
+        width: 30%;
     
     }
 
