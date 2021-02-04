@@ -40,13 +40,23 @@ html{
     animation-name: circulo;
     animation-duration: 6s;
     animation-fill-mode: forwards;
-
     width: 25%;
     height: 25%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
     
     
+}
 
+.animacion div h1 {
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: lavenderblush;
+    margin: auto;
+    
 }
 
 
@@ -102,7 +112,7 @@ html{
     }
 
     to {
-        background-color: #fff;
+        background-color: #77744f;
         transform: rotate(360deg);
         margin-left: 0%;
         border-radius: 50%;
@@ -110,6 +120,7 @@ html{
         width: 25%;
     
     }
+
 }
 
 @media (min-width: 500px){
