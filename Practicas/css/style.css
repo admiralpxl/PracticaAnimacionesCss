@@ -20,9 +20,9 @@ html{
 }
 .animacion {
     animation-name: movimiento;
-    animation-duration: 6s;
-    
+    animation-duration: 3s;
     animation-direction: alternate ;
+    animation-iteration-count: infinite;
     display:flex;
     flex-wrap: wrap;
     width: 20rem;
@@ -78,7 +78,6 @@ html{
     from{
         background-color: #77744f;
         transform: rotate(0deg);
-        margin-left: 75%;
         border-radius: 50%;
     }
 
@@ -92,7 +91,6 @@ html{
         border-radius: 0%;
         height: 40%;
         width: 40%;
-        margin-left: 30.25%;
     
     }
 
@@ -104,7 +102,6 @@ html{
     to {
         background-color: #fff;
         transform: rotate(360deg);
-        margin-left: 0%;
         border-radius: 50%;
         height: 25%;
         width: 25%;
