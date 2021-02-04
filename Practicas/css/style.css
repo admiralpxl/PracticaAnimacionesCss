@@ -1,0 +1,23 @@
+.animacion {
+    animation-name: movimiento;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 100px;
+    background-color: teal;
+    color: #fff;
+    position: relative;
+    padding: 2px;
+}
+
+@keyframes movimiento {
+
+    from {
+        left: 0px;
+    }
+
+    to {
+
+        left: 100px;
+    }
+}
