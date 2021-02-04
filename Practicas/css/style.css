@@ -56,9 +56,38 @@ html{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: lavenderblush;
     margin: auto;
+    animation-name: letra;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
     
 }
 
+@keyframes letra {
+
+    from {
+        font-size: 0;
+    }
+
+    25% {
+        font-size: 1rem;
+    }
+
+    50% {
+        font-size: 5rem;
+    }
+
+    75% {
+        font-size: 1rem;
+        color: lavenderblush;
+    }
+
+    to {
+        font-size: 4rem; 
+        color: black;
+        
+
+    }
+}
 
 @keyframes movimiento {
 
