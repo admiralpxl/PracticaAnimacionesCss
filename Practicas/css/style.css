@@ -30,6 +30,9 @@ html{
     background-color: #3a604a;
     margin: 0 auto;
     border-radius: 50%;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
     
     
     
@@ -51,13 +54,20 @@ html{
     
 }
 
+.h2resto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+}
+
 
 .h2resto::after{
     content: "Welcome!";
     animation-name: despues;
     animation-duration: 6.5s;
     animation-fill-mode: forwards;
-    margin: auto;
+    
     
     
 
@@ -90,7 +100,6 @@ html{
     to {
         font-size: 4rem; 
         color: black;
-        margin: auto 0;
         
     }
 
@@ -171,16 +180,20 @@ html{
     }
     
 
-    to {
+    97% {
        
         transform: rotate(360deg);
         border-radius: 100%;
         height: 0rem;
         width: 0rem;
-        margin-left: 0%;
-        
+     
     }
 
+    to {
+        margin-left: 0%;
+
+    }    
+  
 }
 
 @media (min-width: 500px){
